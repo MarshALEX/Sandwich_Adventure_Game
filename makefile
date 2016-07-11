@@ -54,11 +54,11 @@ CXXFLAGS += -pedantic-errors
 CXXFLAGS += -g
 
 #executable names
-PROG = play
+PROG = playSandwich
 
 all: final 
 
 final:Hero.hpp Hero.cpp Board.hpp Board.cpp TicTacToe.cpp TicTacToe.hpp Car.cpp Car.hpp DiceCup.hpp DiceCup.cpp game.cpp Room5.hpp Room5.cpp Room6.hpp Room6.cpp Room7.hpp Room7.cpp Room8.hpp Room8.cpp Room9.hpp Room9.cpp Room10.cpp Room10.hpp Room0.hpp Room0.cpp Room4.hpp Room4.cpp Room3.hpp Room3.cpp Room1.hpp Room1.cpp Room2.hpp Room2.cpp Player.hpp Player.cpp
 	g++ ${CXX} ${CXXFLAGS} -o ${PROG}
 
-clean: rm -f play *.o
+clean: rm -f playSandwich *.o
